@@ -5,7 +5,7 @@ function NavbarItem({ path, title, Icon }) {
   return (
     <Link
       to={path}
-      className="flex flex-col lg:flex-row items-center cursor-pointer group hover:text-white transition-all duration-200 hover:ease-in-out px-5 py-2 sm:py-0"
+      className="flex flex-col items-center px-5 py-2 transition-all duration-200 cursor-pointer lg:flex-row group hover:text-white hover:ease-in-out sm:py-0"
     >
       {/* <Icon className="h-8 mb-1 group-hover:animate-bounce" /> */}
       <Icon className="h-6 mb-1 group-hover:scale-110" />

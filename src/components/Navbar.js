@@ -9,14 +9,13 @@ import {
 } from "@heroicons/react/outline";
 import NavbarItem from "./NavbarItem";
 import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-} from "react-icons/fa";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+  AiFillFacebook,
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "react-icons/ai";
 import { Link } from "react-router-dom";
+import SocialItem from "./SocialItem";
 
 function Navbar() {
   const [menuShow, setMenuShow] = useState(false);
@@ -24,7 +23,7 @@ function Navbar() {
 
   useEffect(() => {
     const scrollListener = window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         handleShow(true);
       } else handleShow(false);
     });
@@ -36,26 +35,21 @@ function Navbar() {
   console.log(show);
 
   return (
-    <header
+    <div
       className={`flex w-screen bg-[#000] fixed top-0 ${
         show && "opacity-80 transition-opacity duration-500 ease-in"
       }`}
     >
+      {/* logo */}
       <Link
         to="/"
-        className="flex justify-center items-center m-5 text-[#E50914] text-2xl hover:font-bold"
+        className="flex m-2 px-5 sm:items-center justify-center text-[#E50914] text-2xl hover:font-bold"
       >
         Portfolio
       </Link>
 
-      <nav className="w-screen flex flex-col items-center justify-center lg:items-end lg:mr-28 m-2">
-        <div
-          onClick={() => setMenuShow(!menuShow)}
-          className="sm:hidden w-full flex justify-end cursor-pointer hover:text-white transition-all duration-200 ease-in-out"
-        >
-          {menuShow ? <XIcon className="h-8" /> : <MenuIcon className="h-8" />}
-        </div>
-
+      {/* navbar */}
+      <nav className="flex flex-col items-center justify-center w-screen pt-8 m-2 lg:items-end lg:mr-28 sm:pt-0">
         <div
           className={
             "hidden sm:flex flex-col sm:flex-row max-w-2xl" && menuShow
@@ -73,7 +67,32 @@ function Navbar() {
           <NavbarItem path="/resume" title="Resume" Icon={DocumentReportIcon} />
         </div>
       </nav>
-    </header>
+
+      {/* social icons */}
+      <div className="items-center hidden mx-5 md:flex">
+        <SocialItem path="https://github.com/Welin-Chen" Icon={AiFillGithub} />
+        <SocialItem
+          path="https://www.facebook.com/cool.walin/"
+          Icon={AiFillFacebook}
+        />
+        <SocialItem
+          path="https://www.instagram.com/cool.walin/"
+          Icon={AiFillInstagram}
+        />
+        <SocialItem
+          path="https://www.linkedin.com/in/%E7%B6%AD%E9%9C%96-%E9%99%B3-058863113/"
+          Icon={AiFillLinkedin}
+        />
+      </div>
+
+      {/* menu && close icon*/}
+      <div
+        onClick={() => setMenuShow(!menuShow)}
+        className="flex px-5 pt-2 transition-all duration-200 ease-in-out cursor-pointer sm:hidden items-star sm:items-center hover:text-white"
+      >
+        {menuShow ? <XIcon className="h-8" /> : <MenuIcon className="h-8" />}
+      </div>
+    </div>
   );
 }
 
