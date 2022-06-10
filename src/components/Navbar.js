@@ -8,14 +8,9 @@ import {
   XIcon,
 } from "@heroicons/react/outline";
 import NavbarItem from "./NavbarItem";
-import {
-  AiFillFacebook,
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
 import { Link } from "react-router-dom";
 import SocialItem from "./SocialItem";
+import SocialItems from "./SocialItems";
 
 function Navbar() {
   const [menuShow, setMenuShow] = useState(false);
@@ -69,21 +64,7 @@ function Navbar() {
       </nav>
 
       {/* social icons */}
-      <div className="items-center hidden mx-5 md:flex">
-        <SocialItem path="https://github.com/Welin-Chen" Icon={AiFillGithub} />
-        <SocialItem
-          path="https://www.facebook.com/cool.walin/"
-          Icon={AiFillFacebook}
-        />
-        <SocialItem
-          path="https://www.instagram.com/cool.walin/"
-          Icon={AiFillInstagram}
-        />
-        <SocialItem
-          path="https://www.linkedin.com/in/%E7%B6%AD%E9%9C%96-%E9%99%B3-058863113/"
-          Icon={AiFillLinkedin}
-        />
-      </div>
+      <SocialItems className="items-center hidden mx-5 md:flex" />
 
       {/* menu && close icon*/}
       <div
