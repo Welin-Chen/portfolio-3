@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   HomeIcon,
   UserIcon,
@@ -16,30 +16,51 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [menuExpend, setMenuExpend] = useState(false);
+  const [menuShow, setMenuShow] = useState(false);
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    const scrollListener = window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
+  }, []);
+  console.log(show);
 
   return (
-    // <header className="flex m-5 justify-end items-center h-auto">
-    // <nav className="flex flex-col md:flex-row flex-grow justify-evenly max-w-2xl">
+    <header
+      className={`flex w-screen bg-[#000] fixed top-0 ${
+        show && "opacity-80 transition-opacity duration-500 ease-in"
+      }`}
+    >
+      <Link
+        to="/"
+        className="flex justify-center items-center m-5 text-[#E50914] text-2xl hover:font-bold"
+      >
+        Portfolio
+      </Link>
 
-    <div className="flex md:justify-center lg:justify-end bg-black">
-      <div className="flex flex-col md:flex-row flex-grow max-w-2xl justify-center items-center m-5">
+      <nav className="w-screen flex flex-col items-center justify-center lg:items-end lg:mr-28 m-2">
         <div
-          onClick={() => setMenuExpend(!menuExpend)}
-          className="md:hidden w-full flex justify-end cursor-pointer pr-10 hover:text-red-500 transition-all duration-200 ease-in-out"
+          onClick={() => setMenuShow(!menuShow)}
+          className="sm:hidden w-full flex justify-end cursor-pointer hover:text-white transition-all duration-200 ease-in-out"
         >
-          {menuExpend ? (
-            <XIcon className="h-8" />
-          ) : (
-            <MenuIcon className="h-8" />
-          )}
+          {menuShow ? <XIcon className="h-8" /> : <MenuIcon className="h-8" />}
         </div>
 
         <div
           className={
-            "flex flex-col md:flex-row flex-grow max-w-2xl justify-center items-center"
+            "hidden sm:flex flex-col sm:flex-row max-w-2xl" && menuShow
+              ? "sm:flex flex-col sm:flex-row max-w-2xl"
+              : "hidden sm:flex flex-col sm:flex-row max-w-2xl"
           }
         >
           <NavbarItem path="/" title="Home" Icon={HomeIcon} />
@@ -51,9 +72,8 @@ function Navbar() {
           />
           <NavbarItem path="/resume" title="Resume" Icon={DocumentReportIcon} />
         </div>
-      </div>
-    </div>
-    // </header>
+      </nav>
+    </header>
   );
 }
 

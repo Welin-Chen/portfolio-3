@@ -18,6 +18,10 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/" element={<Home />} />
         </Routes>
+        <img
+          src="https://image.tmdb.org/t/p/original/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg"
+          alt=""
+        />
         <Footer />
       </BrowserRouter>
     </div>
