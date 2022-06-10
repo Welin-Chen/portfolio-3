@@ -31,8 +31,8 @@ function Navbar() {
 
   return (
     <div
-      className={`flex w-screen bg-[#000] fixed top-0 ${
-        show && "opacity-80 transition-opacity duration-500 ease-in"
+      className={`z-10 flex w-screen bg-[#000] fixed top-0 transition-all duration-300 ease-in${
+        show && "z-10 opacity-80 transition-all duration-300 ease-in"
       }`}
     >
       {/* logo */}
@@ -44,7 +44,7 @@ function Navbar() {
       </Link>
 
       {/* navbar */}
-      <nav className="flex flex-col items-center justify-center w-screen pt-8 m-2 lg:items-end lg:mr-28 sm:pt-0">
+      <nav className="flex flex-col items-center justify-center w-screen pt-8 m-2 transition-all duration-200 ease-in lg:items-end lg:mr-28 sm:pt-0">
         <div
           className={
             "hidden sm:flex flex-col sm:flex-row max-w-2xl" && menuShow
@@ -69,7 +69,7 @@ function Navbar() {
       {/* menu && close icon*/}
       <div
         onClick={() => setMenuShow(!menuShow)}
-        className="flex px-5 pt-2 transition-all duration-200 ease-in-out cursor-pointer sm:hidden items-star sm:items-center hover:text-white"
+        className="flex px-5 pt-2 cursor-pointer sm:hidden items-star sm:items-center hover:text-white"
       >
         {menuShow ? <XIcon className="h-8" /> : <MenuIcon className="h-8" />}
       </div>
