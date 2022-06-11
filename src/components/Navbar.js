@@ -27,7 +27,6 @@ function Navbar() {
       window.removeEventListener("scroll", scrollListener);
     };
   }, []);
-  console.log(show);
 
   return (
     <div
