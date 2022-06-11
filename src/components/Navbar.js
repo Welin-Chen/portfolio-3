@@ -9,7 +9,6 @@ import {
 } from "@heroicons/react/outline";
 import NavbarItem from "./NavbarItem";
 import { Link } from "react-router-dom";
-import SocialItem from "./SocialItem";
 import SocialItems from "./SocialItems";
 
 function Navbar() {
@@ -28,10 +27,16 @@ function Navbar() {
     };
   }, []);
 
+  console.log(
+    `z-10 flex w-screen bg-[#000] fixed top-0 transition duration-300 ease-in  ${
+      show ? "opacity-80" : "opacity-100"
+    }`
+  );
+
   return (
     <div
-      className={`z-10 flex w-screen bg-[#000] fixed top-0 transition-all duration-300 ease-in${
-        show && "z-10 opacity-80 transition-all duration-300 ease-in"
+      className={`z-10 flex w-screen bg-[#000] fixed top-0 transition duration-300 ease-in  ${
+        show ? "opacity-80 backdrop-blur-md" : "opacity-100  "
       }`}
     >
       {/* logo */}
@@ -46,9 +51,9 @@ function Navbar() {
       <nav className="flex flex-col items-center justify-center w-screen pt-8 m-2 transition-all duration-200 ease-in lg:items-end lg:mr-28 sm:pt-0">
         <div
           className={
-            "hidden sm:flex flex-col sm:flex-row max-w-2xl" && menuShow
-              ? "sm:flex flex-col sm:flex-row max-w-2xl"
-              : "hidden sm:flex flex-col sm:flex-row max-w-2xl"
+            "hidden sm:flex flex-col sm:flex-row max-w-2xl " && menuShow
+              ? "sm:flex flex-col sm:flex-row max-w-2xl "
+              : "hidden sm:flex flex-col sm:flex-row max-w-2xl "
           }
         >
           <NavbarItem path="/" title="Home" Icon={HomeIcon} />
