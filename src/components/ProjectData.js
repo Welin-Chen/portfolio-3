@@ -70,7 +70,7 @@ export const ProjectData = [
     tags: [
       "Node",
       "CRUD",
-      "MongDB",
+      "MongoDB",
       "Express",
       "Boostrap",
       "Heroku",

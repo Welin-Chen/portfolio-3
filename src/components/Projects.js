@@ -5,9 +5,7 @@ import { ProjectData } from "./ProjectData";
 function Projects() {
   return (
     <div className="m-5">
-      <p className="flex justify-center my-32 text-5xl font-bold text-white">
-        Projects
-      </p>
+      <p className="title">Projects</p>
 
       <div className="sm:grid md:grid-cols-2 lg:grid-cols-3">
         {ProjectData.map(

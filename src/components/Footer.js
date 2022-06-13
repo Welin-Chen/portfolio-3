@@ -7,7 +7,7 @@ function Footer() {
     <div className="flex flex-col items-center p-2 font-semibold bg-black md:justify-between md:flex-row">
       <p className="my-2">Desigined and Developed by Welin Chen</p>
       <p className="flex items-center my-2 ">
-        <AiOutlineCopyrightCircle />
+        <AiOutlineCopyrightCircle className="mr-1" />
         2022 Welin Chen
       </p>
       <SocialItems className="flex justify-end my-2" />

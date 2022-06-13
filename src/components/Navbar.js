@@ -27,12 +27,6 @@ function Navbar() {
     };
   }, []);
 
-  console.log(
-    `z-10 flex w-screen bg-[#000] fixed top-0 transition duration-300 ease-in  ${
-      show ? "opacity-80" : "opacity-100"
-    }`
-  );
-
   return (
     <div
       className={`z-10 flex w-screen bg-[#000] fixed top-0 transition duration-300 ease-in  ${
