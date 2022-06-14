@@ -29,7 +29,7 @@ function Navbar() {
 
   return (
     <div
-      className={`z-10 flex w-screen bg-[#000] fixed top-0 transition duration-300 ease-in  ${
+      className={`z-10 flex w-screen bg-[#000] fixed top-0 transition duration-300 ease-in-out  ${
         show ? "opacity-80 backdrop-blur-md" : "opacity-100  "
       }`}
     >

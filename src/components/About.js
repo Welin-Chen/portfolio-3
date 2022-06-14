@@ -67,8 +67,11 @@ function About() {
             end_year,
             degree,
           }) => (
-            <div className="flex flex-col items-center justify-center p-3 m-3 text-xl transition duration-300 ease-in-out shadow-lg hover:border-2 border-sky-300 hover:scale-105 shadow-sky-300 rounded-3xl">
-              <img key={id} src={src} alt={title} className="my-2 w-44" />
+            <div
+              key={id}
+              className="flex flex-col items-center justify-center p-3 m-3 text-xl transition duration-300 ease-in-out shadow-lg hover:border-2 border-sky-300 hover:scale-105 shadow-sky-300 rounded-3xl"
+            >
+              <img src={src} alt={title} className="my-2 w-44" />
 
               <p className="about__p">{title}</p>
               <p className="about__p">{degree}</p>

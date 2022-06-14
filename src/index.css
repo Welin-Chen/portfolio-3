@@ -36,6 +36,14 @@
   .purpleText {
     @apply mt-16 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600;
   }
+
+  /* Contact */
+  .contact__input {
+    @apply w-full p-2 my-1 text-gray-600 border-2 border-purple-500 rounded focus:outline-none;
+  }
+  .contact__p--valid {
+    @apply mb-2 font-medium text-red-600 dark:text-red-500;
+  }
 }
 
 /* { */
