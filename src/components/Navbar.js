@@ -57,7 +57,11 @@ function Navbar() {
             title="Projects"
             Icon={PresentationChartBarIcon}
           />
-          <NavbarItem path="/resume" title="Resume" Icon={DocumentReportIcon} />
+          <NavbarItem
+            path="/contact"
+            title="Contact"
+            Icon={DocumentReportIcon}
+          />
         </div>
       </nav>
 

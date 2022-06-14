@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -15,13 +15,10 @@ function App() {
         <Routes>
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
         </Routes>
-        {/* <img
-          src="https://image.tmdb.org/t/p/original/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg"
-          alt=""
-        /> */}
+
         <Footer />
       </BrowserRouter>
     </div>

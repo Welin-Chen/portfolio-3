@@ -9,9 +9,11 @@ function Home() {
   return (
     <div className="flex flex-col m-16 mt-32 md:m-32 lg:m-52">
       <section className="text-white ">
-        <p className="text-5xl w-fit textColor">Hello 👋</p>
-        <p className="mt-5 text-4xl w-fit textColor">Welcome to my portfolio</p>
-        <p className="mt-5 text-4xl w-fit textColor">I'm Welin Chen.</p>
+        <p className="text-5xl w-fit purpleText">Hello 👋</p>
+        <p className="mt-5 text-4xl w-fit purpleText">
+          Welcome to my portfolio
+        </p>
+        <p className="mt-5 text-4xl w-fit purpleText">I'm Welin Chen.</p>
         <p className="mt-5 text-4xl">
           I like coding, I'm interesting in web development.
         </p>
@@ -39,7 +41,7 @@ function Home() {
       <section className="flex flex-col items-center ">
         {/* <p className="mt-16 text-3xl text-center">Find Me</p> */}
         {/* <p className="mt-16 text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> */}
-        <p className="textColor">Find Me</p>
+        <p className="purpleText">Find Me</p>
         <div className="flex justify-center my-2 mt-10">
           <a
             target="_blank"
