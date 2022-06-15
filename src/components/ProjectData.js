@@ -78,6 +78,6 @@ export const ProjectData = [
       "Mapbox",
     ],
     demo: "https://still-badlands-39239.herokuapp.com/campgrounds",
-    code: "https://github.com/Welin-Chen/Web_Development_Bootcamp_2022_ColtSteele/tree/master/YelpCamp",
+    code: "https://github.com/Welin-Chen/YelpCamp/tree/master",
   },
 ];
