@@ -1,6 +1,6 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import React from "react";
-import { AiFillGithub, AiOutlineArrowRight } from "react-icons/ai";
+import { AiFillGithub, AiOutlineCloudDownload } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -24,15 +24,17 @@ function Home() {
           ...
         </p>
 
-        <Link to="/about">
-          <button
+        <div className="flex">
+          <Link
+            to="/file/簡歷-陳維霖.pdf"
+            target="_blank"
             type="button"
-            className="flex items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+            className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
           >
-            View More
-            <AiOutlineArrowRight className="ml-2" />
-          </button>
-        </Link>
+            <AiOutlineCloudDownload className="mr-2" />
+            Download CV
+          </Link>
+        </div>
       </section>
 
       <section className="flex flex-col items-center ">
