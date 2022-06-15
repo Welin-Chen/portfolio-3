@@ -21,7 +21,6 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
-import { SkillData } from "./SkillData";
 import { ExperienceData } from "./ExperienceData";
 import GitHubCalendar from "react-github-calendar";
 

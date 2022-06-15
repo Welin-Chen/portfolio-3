@@ -40,6 +40,7 @@ function Home() {
         <div className="flex justify-center my-2 mt-10">
           <a
             target="_blank"
+            rel="noreferrer"
             href="tel:0929015591"
             className="flex items-center p-2 mx-8 text-2xl font-medium text-center text-white transition-all duration-300 ease-in-out rounded-full shadow-lg cursor-pointer group hover:bg-gray-400 hover:scale-125 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 "
           >
@@ -47,6 +48,7 @@ function Home() {
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             href="mailTo:a0929015591@gmail.com"
             className="flex items-center p-2 mx-8 text-2xl font-medium text-center text-white transition-all duration-300 ease-in-out rounded-full shadow-lg cursor-pointer group hover:bg-gray-400 hover:scale-125 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 "
           >
@@ -54,6 +56,7 @@ function Home() {
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/Welin-Chen"
             className="flex items-center p-2 mx-8 text-2xl font-medium text-center text-white transition-all duration-300 ease-in-out rounded-full shadow-lg cursor-pointer group hover:bg-gray-400 hover:scale-125 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 "
           >

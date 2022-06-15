@@ -29,13 +29,13 @@ function ProjectCard({ src, title, description, tags, demo, code }) {
 
       {/* button */}
       <div className="flex justify-evenly">
-        <a href={demo} target="_blank">
+        <a href={demo} target="_blank" rel="noreferrer">
           <button className="group button--gradient--outline">
             <span className="button__span--gradient--outline">Visit</span>
           </button>
         </a>
 
-        <a href={code} target="_blank">
+        <a href={code} target="_blank" rel="noreferrer">
           <button className="group button--gradient--outline">
             <span className="button__span--gradient--outline">Code</span>
           </button>
