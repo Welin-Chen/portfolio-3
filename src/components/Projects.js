@@ -4,8 +4,8 @@ import { ProjectData } from "./ProjectData";
 
 function Projects() {
   return (
-    <div className="m-5">
-      <p className="title">Projects</p>
+    <div className="div--container">
+      <p className="mt-5 w-fit p--title--purple">Projects</p>
 
       <div className="sm:grid md:grid-cols-2 lg:grid-cols-3">
         {ProjectData.map(

@@ -8,17 +8,24 @@
   }
 }
 
+@layer utilities {
+  .transition--300-ease-in-out {
+    @apply transition duration-300 ease-in-out;
+  }
+}
+
 @layer components {
-  .skill-Icon {
-    @apply object-scale-down p-6 m-5 text-white transition duration-300 ease-in-out  border-[1px] rounded-lg border-sky-300 hover:shadow-md hover:border-2 hover:shadow-sky-300 w-44 h-28 hover:scale-105;
+  /* All */
+  .div--container {
+    @apply flex flex-col items-center justify-center w-full h-full px-5 mt-16;
   }
 
-  .title {
-    @apply flex justify-center my-32 text-5xl font-bold text-white;
+  .p--title--purple {
+    @apply mt-16 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600;
   }
-
-  .about__title {
-    @apply my-10 text-5xl text-center text-gray-300;
+  /* About */
+  .about__icon {
+    @apply object-scale-down p-6 m-5 text-white transition duration-300 ease-in-out  border-[1px] rounded-lg border-purple-300 hover:shadow-md hover:border-2 hover:shadow-purple-300 w-44 h-28 hover:scale-105;
   }
 
   .about__p {
@@ -26,15 +33,7 @@
   }
 
   .projectCard__button {
-    @apply px-4 py-2 font-bold text-white bg-red-600 rounded-lg shadow-md shadow-red-600/40 hover:bg-white hover:text-red-600 hover:shadow-white;
-  }
-
-  .redButton {
-    @apply text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
-  }
-
-  .purpleText {
-    @apply mt-16 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600;
+    @apply px-4 py-2 font-bold text-white bg-purple-700 rounded-lg shadow-md shadow-purple-600/40 hover:bg-white hover:text-purple-600 hover:shadow-white;
   }
 
   /* Contact */
@@ -43,6 +42,19 @@
   }
   .contact__p--valid {
     @apply mb-2 font-medium text-red-600 dark:text-red-500;
+  }
+
+  .contact__button--purple {
+    @apply w-fit text-white bg-gradient-to-r from-purple-400  to-purple-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mt-2 hover:scale-105 transition duration-300 ease-in-out;
+  }
+
+  /* ProjectCard */
+  .button--gradient--outline {
+    @apply relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800;
+  }
+
+  .button__span--gradient--outline {
+    @apply relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0;
   }
 }
 

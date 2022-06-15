@@ -10,6 +10,7 @@ function Footer() {
         <AiOutlineCopyrightCircle className="mr-1" />
         2022 Welin Chen
       </p>
+
       <SocialItems className="flex justify-end my-2" />
     </div>
   );

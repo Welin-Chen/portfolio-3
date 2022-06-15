@@ -31,8 +31,8 @@ function Contact() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full px-5 mt-16">
-      <p className="mt-5 text-4xl w-fit purpleText">Contact</p>
+    <div className="div--container">
+      <p className="mt-5 w-fit p--title--purple">Contact</p>
 
       <form
         ref={form}

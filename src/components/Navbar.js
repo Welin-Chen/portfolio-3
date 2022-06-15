@@ -10,6 +10,7 @@ import {
 import NavbarItem from "./NavbarItem";
 import { Link } from "react-router-dom";
 import SocialItems from "./SocialItems";
+import { CgFileDocument } from "react-icons/cg";
 
 function Navbar() {
   const [menuShow, setMenuShow] = useState(false);
@@ -29,16 +30,20 @@ function Navbar() {
 
   return (
     <div
-      className={`z-10 flex w-screen bg-[#000] fixed top-0 transition duration-300 ease-in-out  ${
+      className={`z-10 flex w-screen bg-[#000] fixed top-0 transition--300-ease-in-out  ${
         show ? "opacity-80 backdrop-blur-md" : "opacity-100  "
       }`}
     >
       {/* logo */}
       <Link
         to="/"
-        className="flex m-2 px-5 sm:items-center justify-center text-[#E50914] text-2xl hover:font-bold"
+        className="flex items-start px-6 m-2 text-2xl text-purple-500 group hover:text-pink-500 hover:scale-105 transition--300-ease-in-out"
+        // className="flex items-start px-6 m-2 text-2xl p--title--purple hover:scale-105 transition--300-ease-in-out"
       >
-        Portfolio
+        <div className="flex items-center">
+          <CgFileDocument className="w-6 mr-1 text-purple-500 group-hover:text-pink-500 transition--300-ease-in-out" />
+          Portfolio
+        </div>
       </Link>
 
       {/* navbar */}
@@ -71,7 +76,7 @@ function Navbar() {
       {/* menu && close icon*/}
       <div
         onClick={() => setMenuShow(!menuShow)}
-        className="flex px-5 pt-2 cursor-pointer sm:hidden items-star sm:items-center hover:text-white"
+        className="flex px-5 pt-2 text-purple-500 cursor-pointer sm:hidden items-star sm:items-center hover:text-pink-500 transition--300-ease-in-out"
       >
         {menuShow ? <XIcon className="h-8" /> : <MenuIcon className="h-8" />}
       </div>
