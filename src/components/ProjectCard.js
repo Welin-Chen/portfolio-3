@@ -1,8 +1,5 @@
 import React from "react";
 
-// const projectCard__button =
-//   "bg-red-600 shadow-md shadow-red-600/40 hover:bg-white hover:text-red-600 hover:shadow-white text-white font-bold py-2 px-4 rounded-lg";
-
 function ProjectCard({ src, title, description, tags, demo, code }) {
   return (
     <div className="p-5 m-5 overflow-hidden transition duration-300 ease-in-out shadow-md opacity-100 hover:shadow-purple-500 shadow-purple-500 hover:shadow-lg rounded-xl hover:scale-105 hover:opacity-100">

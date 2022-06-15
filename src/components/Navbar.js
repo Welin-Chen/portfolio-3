@@ -30,15 +30,14 @@ function Navbar() {
 
   return (
     <div
-      className={`z-10 flex w-screen bg-[#000] fixed top-0 transition--300-ease-in-out  ${
+      className={`z-10 flex w-screen bg-black fixed top-0 transition--300-ease-in-out  ${
         show ? "opacity-80 backdrop-blur-md" : "opacity-100  "
       }`}
     >
       {/* logo */}
       <Link
         to="/"
-        className="flex items-start px-6 m-2 text-2xl text-purple-500 group hover:text-pink-500 hover:scale-105 transition--300-ease-in-out"
-        // className="flex items-start px-6 m-2 text-2xl p--title--purple hover:scale-105 transition--300-ease-in-out"
+        className="flex items-start justify-center px-6 m-2 text-2xl text-purple-500 sm:items-center group hover:text-pink-500 sm:hover:scale-110 transition--300-ease-in-out"
       >
         <div className="flex items-center">
           <CgFileDocument className="w-6 mr-1 text-purple-500 group-hover:text-pink-500 transition--300-ease-in-out" />
@@ -47,7 +46,7 @@ function Navbar() {
       </Link>
 
       {/* navbar */}
-      <nav className="flex flex-col items-center justify-center w-screen pt-8 m-2 transition-all duration-200 ease-in lg:items-end lg:mr-28 sm:pt-0">
+      <nav className="flex flex-col items-center justify-center w-screen pt-8 m-2 lg:items-end lg:mr-28 sm:pt-0">
         <div
           className={
             "hidden sm:flex flex-col sm:flex-row max-w-2xl " && menuShow

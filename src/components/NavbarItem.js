@@ -5,11 +5,11 @@ function NavbarItem({ path, title, Icon }) {
   return (
     <Link
       to={path}
-      className="flex flex-col items-center px-5 py-2 transition-all duration-200 cursor-pointer lg:flex-row group hover:text-white hover:ease-in-out sm:py-0"
+      className="flex flex-col items-center px-5 py-2 cursor-pointer transition--300-ease-in-out group lg:flex-row hover:text-gray-100 sm:py-0 hover:scale-110"
     >
       {/* <Icon className="h-8 mb-1 group-hover:animate-bounce" /> */}
-      <Icon className="h-6 mb-1 group-hover:scale-110" />
-      <p className="ml-1 tracking-widest group-hover:font-bold">{title}</p>
+      <Icon className="h-6 mb-1" />
+      <p className="ml-1 text-lg font-bold tracking-widest">{title}</p>
     </Link>
   );
 }
