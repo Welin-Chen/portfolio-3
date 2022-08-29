@@ -30,6 +30,7 @@ function Navbar() {
 
   return (
     <div
+      onClick={() => setMenuShow(!menuShow)}
       className={`z-10 flex w-screen bg-black fixed top-0 transition--300-ease-in-out  ${
         show ? "opacity-80 backdrop-blur-md" : "opacity-100  "
       }`}
@@ -37,11 +38,13 @@ function Navbar() {
       {/* logo */}
       <Link
         to="/"
-        className="flex items-start justify-center px-6 m-2 text-2xl text-purple-500 sm:items-center group hover:text-pink-500 sm:hover:scale-110 transition--300-ease-in-out"
+        className="flex items-start justify-center w-screen px-6 m-4 text-2xl text-purple-500 sm:items-center group hover:text-pink-500 sm:hover:scale-110 transition--300-ease-in-out"
       >
         <div className="flex items-center">
-          <CgFileDocument className="w-6 mr-1 text-purple-500 group-hover:text-pink-500 transition--300-ease-in-out" />
-          Portfolio
+          <CgFileDocument className="w-8 h-8 mr-1 text-purple-500 group-hover:text-pink-500 transition--300-ease-in-out" />
+          {/* Portfolio */}
+          {/* {menuShow ? <br /> : <p>Portfolio</p>} */}
+          <div className="hidden md:flex">Portfolio</div>
         </div>
       </Link>
 
@@ -68,14 +71,12 @@ function Navbar() {
           />
         </div>
       </nav>
-
       {/* social icons */}
-      <SocialItems className="items-center hidden mx-5 md:flex" />
-
+      <SocialItems className="items-center hidden mx-5 xl:flex" />
       {/* menu && close icon*/}
       <div
         onClick={() => setMenuShow(!menuShow)}
-        className="flex px-5 pt-2 text-purple-500 cursor-pointer sm:hidden items-star sm:items-center hover:text-pink-500 transition--300-ease-in-out"
+        className="flex px-10 m-4 text-purple-500 cursor-pointer sm:hidden items-star sm:items-center hover:text-pink-500 transition--300-ease-in-out"
       >
         {menuShow ? <XIcon className="h-8" /> : <MenuIcon className="h-8" />}
       </div>
