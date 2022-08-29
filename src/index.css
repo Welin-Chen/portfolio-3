@@ -4,7 +4,7 @@
 
 @layer {
   body {
-    @apply bg-[#111] text-purple-300;
+    @apply bg-[#111] text-purple-200;
   }
 }
 
