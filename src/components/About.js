@@ -30,7 +30,7 @@ function About() {
       <p className="mt-5 text-5xl p--title--purple w-fit">About</p>
 
       <p className="p--title--purple w-fit">Skills</p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center">
+      <div className="grid grid-cols-2 max-w-screen-3xl sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 justify-items-center ">
         <DiReact className="about__icon" />
         <SiNextdotjs className="about__icon" />
         <DiNodejs className="about__icon" />
@@ -55,7 +55,7 @@ function About() {
       <p className="m-5 p--title--purple w-fit">
         Education and Work experience
       </p>
-      <div className="grid mx-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid mx-0 md:grid-cols-2 lg:grid-cols-3">
         {ExperienceData.map(
           ({
             id,

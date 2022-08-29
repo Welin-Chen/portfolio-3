@@ -25,7 +25,7 @@
   }
   /* About */
   .about__icon {
-    @apply object-scale-down p-6 m-5 text-white transition duration-300 ease-in-out  border-[1px] rounded-lg border-purple-300 hover:shadow-md hover:border-2 hover:shadow-purple-300 w-44 h-28 hover:scale-105;
+    @apply scale-75 m-0 sm:scale-100 object-scale-down p-6 sm:m-5 text-white transition duration-300 ease-in-out  border-[1px] rounded-lg border-purple-300 hover:shadow-md hover:border-2 hover:shadow-purple-300 w-44 h-28;
   }
 
   .about__p {
