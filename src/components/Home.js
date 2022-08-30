@@ -1,6 +1,7 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import React from "react";
 import { AiFillGithub, AiOutlineCloudDownload } from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -64,6 +65,14 @@ function Home() {
           >
             <AiFillGithub className="w-12 h-12" />
           </a>
+          {/* <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://leetcode.com/welin/"
+            className="flex items-center p-2 mx-8 text-2xl font-medium text-center text-white transition-all duration-300 ease-in-out rounded-full shadow-lg cursor-pointer group hover:bg-gray-400 hover:scale-125 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 "
+          >
+            <SiLeetcode className="w-12 h-12" />
+          </a> */}
         </div>
       </section>
     </div>
