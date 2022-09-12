@@ -33,7 +33,64 @@ function Home() {
             className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
           >
             <AiOutlineCloudDownload className="mr-2" />
-            Download CV
+            Resume
+          </Link>
+
+          <Link
+            to="/file/陳維霖_履歷.pdf"
+            target="_blank"
+            type="button"
+            className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+          >
+            <AiOutlineCloudDownload className="mr-2" />
+            CV
+          </Link>
+
+          <Link
+            to="/file/台灣大學_博士班成績單.pdf"
+            target="_blank"
+            type="button"
+            className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+          >
+            <AiOutlineCloudDownload className="mr-2" />
+            PhD
+          </Link>
+          <Link
+            to="/file/成功大學_碩士班成績單.pdf"
+            target="_blank"
+            type="button"
+            className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+          >
+            <AiOutlineCloudDownload className="mr-2" />
+            MS
+          </Link>
+          <Link
+            to="/file/中原大學_學士班成績單.pdf"
+            target="_blank"
+            type="button"
+            className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+          >
+            <AiOutlineCloudDownload className="mr-2" />
+            BS
+          </Link>
+
+          <Link
+            to="/file/成功大學-碩士論文發表期刊.pdf"
+            target="_blank"
+            type="button"
+            className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+          >
+            <AiOutlineCloudDownload className="mr-2" />
+            Journal
+          </Link>
+          <Link
+            to="/file/無控火箭(飛彈)6 自由度運動模擬.pdf"
+            target="_blank"
+            type="button"
+            className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+          >
+            <AiOutlineCloudDownload className="mr-2" />
+            6D
           </Link>
         </div>
       </section>
