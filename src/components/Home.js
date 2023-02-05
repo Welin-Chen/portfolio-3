@@ -1,6 +1,10 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import React from "react";
-import { AiFillGithub, AiOutlineCloudDownload } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiOutlineCloudDownload,
+  AiFillLinkedin,
+} from "react-icons/ai";
 import { SiLeetcode } from "react-icons/si";
 import { Link } from "react-router-dom";
 
@@ -27,7 +31,7 @@ function Home() {
 
         <div className="flex">
           <Link
-            to="/file/簡歷-陳維霖.pdf"
+            to="/file/Resume - Weilin Chen.pdf"
             target="_blank"
             type="button"
             className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
@@ -36,7 +40,7 @@ function Home() {
             Resume
           </Link>
 
-          <Link
+          {/* <Link
             to="/file/陳維霖_履歷.pdf"
             target="_blank"
             type="button"
@@ -44,7 +48,7 @@ function Home() {
           >
             <AiOutlineCloudDownload className="mr-2" />
             CV
-          </Link>
+          </Link> */}
 
           <Link
             to="/file/台灣大學_博士班成績單.pdf"
@@ -101,11 +105,21 @@ function Home() {
           <a
             target="_blank"
             rel="noreferrer"
+            href="https://www.linkedin.com/in/welin-chen-058863113/"
+            className="flex items-center p-2 mx-8 text-2xl font-medium text-center text-white transition-all duration-300 ease-in-out rounded-full shadow-lg cursor-pointer group hover:bg-gray-400 hover:scale-125 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 "
+          >
+            <AiFillLinkedin className="w-12 h-12" />
+          </a>
+
+          <a
+            target="_blank"
+            rel="noreferrer"
             href="tel:0929015591"
             className="flex items-center p-2 mx-8 text-2xl font-medium text-center text-white transition-all duration-300 ease-in-out rounded-full shadow-lg cursor-pointer group hover:bg-gray-400 hover:scale-125 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 "
           >
             <PhoneIcon className="w-12 h-12" />
           </a>
+
           <a
             target="_blank"
             rel="noreferrer"
@@ -114,6 +128,7 @@ function Home() {
           >
             <MailIcon className="w-12 h-12" />
           </a>
+
           <a
             target="_blank"
             rel="noreferrer"
@@ -122,14 +137,6 @@ function Home() {
           >
             <AiFillGithub className="w-12 h-12" />
           </a>
-          {/* <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://leetcode.com/welin/"
-            className="flex items-center p-2 mx-8 text-2xl font-medium text-center text-white transition-all duration-300 ease-in-out rounded-full shadow-lg cursor-pointer group hover:bg-gray-400 hover:scale-125 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 "
-          >
-            <SiLeetcode className="w-12 h-12" />
-          </a> */}
         </div>
       </section>
     </div>

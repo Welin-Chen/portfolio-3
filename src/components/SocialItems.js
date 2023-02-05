@@ -26,7 +26,7 @@ function SocialItems({ className }) {
         Icon={AiFillInstagram}
       /> */}
       <SocialItem
-        path="https://www.linkedin.com/in/%E7%B6%AD%E9%9C%96-%E9%99%B3-058863113/"
+        path="https://www.linkedin.com/in/welin-chen-058863113/"
         Icon={AiFillLinkedin}
       />
     </div>
