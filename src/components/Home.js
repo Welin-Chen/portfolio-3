@@ -18,16 +18,15 @@ function Home() {
         </p>
         <p className="mt-5 text-4xl w-fit p--title--purple">I'm Welin Chen.</p>
         <p className="mt-5 text-4xl">
-          I like coding, I'm interesting in web development.
+          I love coding and learning new things. I am currently looking for
+          software engineering positions. If there are any opportunities or
+          questions, please feel free to contact me. Thank you!
         </p>
-        <div className="mt-5 text-4xl">My goal is become a web developer!</div>
+        <div className="mt-5 text-4xl"></div>
       </section>
 
       <section>
-        <p className="mt-10 mb-5 text-2xl">
-          Now I've built some front-end and back-end projects, master skills at
-          ...
-        </p>
+        <p className="mt-10 mb-5 text-2xl"></p>
 
         <div className="flex">
           <Link
