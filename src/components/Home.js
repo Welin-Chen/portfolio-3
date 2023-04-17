@@ -17,11 +17,13 @@ function Home() {
           Welcome to my portfolio
         </p>
         <p className="mt-5 text-4xl w-fit p--title--purple">I'm Welin Chen.</p>
-        <p className="mt-5 text-4xl">I love coding and learning new things.</p>
-        <div className="mt-5 text-4xl">
+        <p className="mt-5 text-4xl p--title--purple">
+          I love coding and learning new things.
+        </p>
+        <div className="mt-5 text-4xl p--title--purple">
           I am currently looking for software engineer position.
         </div>
-        <div className="mt-5 text-4xl">
+        <div className="mt-5 text-4xl p--title--purple">
           If there are any opportunities or questions, please feel free to
           contact me. Thank you!
         </div>
