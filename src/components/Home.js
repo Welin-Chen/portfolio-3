@@ -31,7 +31,7 @@ function Home() {
 
         <div className="flex">
           <Link
-            to="/file/Resume - Weilin Chen.pdf"
+            to="/file/我的簡歷-軟體工程師 - Google 文件.pdf"
             target="_blank"
             type="button"
             className="flex w-fit items-center text-2xl text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 hover:scale-110 transition duration-300 ease-in-out"
