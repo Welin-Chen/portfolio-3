@@ -19,7 +19,7 @@ function Home() {
         <p className="mt-5 text-4xl w-fit p--title--purple">I'm Welin Chen.</p>
         <p className="mt-5 text-3xl">I love coding and learning new things.</p>
         <div className="mt-5 text-3xl">
-          I am currently looking for software engineer position.
+          I am currently looking for a software engineer position.
         </div>
         <div className="mt-5 text-3xl">
           If there are any opportunities or questions, please feel free to
